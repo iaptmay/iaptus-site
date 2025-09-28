@@ -1,19 +1,48 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Donate — IAPT</title><link rel="icon" href="img/logo.svg"><link rel="stylesheet" href="css/styles.css"></head>
+<html lang="en">
+<head>
+  <title>Donate — IAPT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/logo.svg">
+  <link rel="stylesheet" href="css/styles.css?v=6">
+  <style>
+    /* Fallback to guarantee visibility, even if cached CSS is stale */
+    .hero, .card, section, footer { background:#fff !important; color:#111 !important; }
+    .hero *, .card *, section *, footer * { color:#111 !important; opacity:1 !important; text-shadow:none !important; }
+    .badge { background:#22a06b !important; color:#fff !important; padding:4px 10px; border-radius:999px; font-size:12px; margin-bottom:8px; display:inline-block; }
+    .card-link { display:block; text-decoration:none; color:inherit; }
+    .card-link:hover { box-shadow:0 10px 28px rgba(0,0,0,.12); transform:translateY(-2px); }
+  </style>
+</head>
 <body>
-<header class="header"><div class="container">
-<div class="brand"><img class="brand-logo" src="img/logo.svg" alt="IAPT logo"><div><h1>Institute for Applied Process Thought (IAPT)</h1></div></div>
-<nav class="nav"><a href="index.html">Home</a><a href="about.html">About</a><a href="programs.html">Programs</a><a href="events.html">Events</a><a href="donate.html">Donate</a><a href="contact.html">Contact</a></nav>
-<div class="container hero">
-<h2>Donate</h2>
-<p>Thank you for supporting IAPT’s mission. Choose a method below (placeholders — replace with your real links later):</p>
-<p>
-  <a class="btn-pay" href="#" onclick="alert('Replace this with your Stripe link.');return false;">Donate with Stripe</a>
-  &nbsp;
-  <a class="btn-pay" href="#" onclick="alert('Replace this with your PayPal.me link.');return false;">Donate with PayPal</a>
-</p>
-<p>Questions? Email <a href="mailto:info.iaptus@gmail.com">info.iaptus@gmail.com</a></p>
-</div></div></header>
-<div class="container section"><div class="footer">© IAPT · <a href="mailto:info.iaptus@gmail.com">info.iaptus@gmail.com</a> · PO BOX 212, Claremont, CA 91711</div></div>
-</body></html>
+<header class="header">
+  <div class="container">
+    <div class="brand">
+      <img class="brand-logo" src="img/logo.svg" alt="IAPT logo">
+      <h1>Institute for Applied Process Thought (IAPT)</h1>
+    </div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="programs.html">Programs</a>
+      <a href="events.html">Events</a>
+      <a href="donate.html">Donate</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container hero">
+      <h2>Donate</h2>
+      <p>Thank you for supporting IAPT’s mission.</p>
+      <p>
+        <a class="cta" href="#" onclick="alert('Replace with your Stripe link');return false;">Donate with Stripe</a>
+        <a class="cta secondary" href="#" onclick="alert('Replace with your PayPal link');return false;">Donate with PayPal</a>
+      </p>
+      <p>Email <a href="mailto:info.iaptus@gmail.com">info.iaptus@gmail.com</a> with any questions.</p>
+    </div>
+  </div>
+</header>
+<div class="container section">
+  <footer>© IAPT · <a href="mailto:info.iaptus@gmail.com">info.iaptus@gmail.com</a> · PO BOX 212, Claremont, CA 91711</footer>
+</div>
+</body>
+</html>
