@@ -6,17 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact — IAPT</title>
   <link rel="icon" href="img/logo.svg">
-  <link rel="stylesheet" href="css/styles.css?v=8">
+  <link rel="stylesheet" href="css/styles.css?v=10">
   <style>
-/* build:20250928-033700UTC */
+/* build:20250928-045709UTC */
 .hero, .card, section, footer { background:#fff !important; color:#111 !important; }
 .hero *, .card *, section *, footer * { color:#111 !important; opacity:1 !important; text-shadow:none !important; }
-/* nav fix + button look */
 .header { position:relative; z-index:1000; }
-.nav    { position:relative; z-index:1001; display:flex; gap:14px; flex-wrap:wrap; justify-content:center; padding:12px 0; }
-.nav a  { display:inline-block; padding:6px 12px; border-radius:10px; background:rgba(255,255,255,.08); color:#fff; font-weight:700; text-decoration:none; }
+.nav { position:relative; z-index:1001; display:flex; gap:14px; flex-wrap:wrap; justify-content:center; padding:12px 0; }
+.nav a { display:inline-block; padding:6px 12px; border-radius:10px; background:rgba(255,255,255,.08); color:#fff; font-weight:700; text-decoration:none; }
 .nav a:hover { background:rgba(255,255,255,.18); }
-/* spacing fix so hero never overlaps nav */
+.nav a.active { background:#2f7de1 !important; color:#fff !important; }
 .hero { margin-top:16px !important; border-radius:18px; box-shadow:0 8px 30px rgba(0,0,0,.12); padding:24px; }
 .brand { display:flex; align-items:center; gap:14px; justify-content:center; }
 .brand-logo { inline-size:44px; block-size:44px; }
@@ -46,7 +45,7 @@ footer { text-align:center; color:#666; }
       <a href="programs.html">Programs</a>
       <a href="events.html">Events</a>
       <a href="donate.html">Donate</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </div>
 </header>
